@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header, .nav, .article, .sidebar, .advertise, .footer{
+            border: 1px solid tomato;
+            background-color: aqua;
+            border-radius: 5px;
+            padding: 15px;
+        } 
+        .header{
+            grid-area: header;
+        }
+        .nav{
+            grid-area: nav;
+        }
+        .article{
+            grid-area: article;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .advertise{
+            grid-area: advertise;
+        }
+        .footer{
+            grid-area: footer;
+        }
+
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 
+            "header header header header"
+            "nav article article sidebar"
+            "nav article article advertise"
+            "footer footer footer footer"
+            ;
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-areas: 
+                "header"
+                "nav"
+                "article"
+                "sidebar"
+                "advertise"
+                "footer"
+                ;
+            }
+          
+        }
+        </style>
+</head>
+<body class="container">
+    <header class="header">
+        <h3>Header</h3>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li>nav-1</li>
+            <li>nav-2</li>
+            <li>nav-3</li>
+        </ul>
+    </nav>
+    <main class="article">
+        <article>
+            <h3>Article-1</h3>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores laboriosam natus assumenda unde atque, aliquam alias corrupti distinctio, rem voluptas magni, fugit quae. Dolor maiores laudantium ad sit quia vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis excepturi accusamus illo, similique magnam est? Exercitationem nobis aspernatur, nihil pariatur ratione magni hic rerum sit, laudantium architecto quibusdam alias. </p>
+        </article>
+        <article>
+            <h3>Article-2</h3>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores laboriosam natus assumenda unde atque, aliquam alias corrupti distinctio, rem voluptas magni, fugit quae. Dolor maiores laudantium ad sit quia vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae blanditiis excepturi accusamus illo, similique magnam est? Exercitationem nobis aspernatur, nihil pariatur ratione magni hic rerum sit, laudantium architecto quibusdam alias. </p>
+        </article>
+    </main>
+    <div class="sidebar">
+        <h3>Sidebar</h3>
+    </div>
+    <div class="advertise">
+        <h3>Advertise</h3>
+    </div>
+    <footer class="footer">
+        <h3>The Footer</h3>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     .container1{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     border: 2px solid tomato;
+
+    }
+    .container2{
+        /* display: grid;
+        grid-template-columns: repeat(2, 1fr); */
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .container1 p{
+        width: 100%;
+    }
+    @media screen and (max-width:576px) {
+        .container1{
+            display: block;
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+
+   </style>
+</head>
+<body>
+    <div class="container1">
+        <img src="image/greece.jpg" alt="">
+        <p>.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nam voluptatum nemo rerum hic tempora cumque dolorum earum ab vero tenetur dicta, quam velit, accusantium deleniti iste. Nostrum, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti doloribus, minus repellendus corporis quod, quibusdam illo dignissimos libero architecto nulla fugiat, veritatis saepe blanditiis tenetur veniam? Eum natus quam vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore velit labore exercitationem architecto cumque animi amet molestias consequuntur nihil? Voluptas aut provident aliquam eos vero eveniet. Quam ipsam error nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia nesciunt dolore quis ipsa, minima inventore enim nemo in expedita libero consectetur debitis veniam saepe dicta corporis illum exercitationem iste aut <br>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nam voluptatum nemo rerum hic tempora cumque dolorum earum ab vero tenetur dicta, quam velit, accusantium deleniti iste. Nostrum, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti doloribus, minus repellendus corporis quod, quibusdam illo dignissimos libero architecto nulla fugiat, veritatis saepe blanditiis tenetur veniam? Eum natus quam vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore velit labore exercitationem architecto cumque animi amet molestias consequuntur nihil? Voluptas aut provident aliquam eos vero eveniet. Quam ipsam error nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia nesciunt dolore quis ipsa, minima inventore enim nemo in expedita libero consectetur debitis veniam saepe dicta corporis illum exercitationem iste aut</p>
+    </div>
+    <div class="container2">
+        <img src="image/greece.jpg" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nam voluptatum nemo rerum hic tempora cumque dolorum earum ab vero tenetur dicta, quam velit, accusantium deleniti iste. Nostrum, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti doloribus, minus repellendus corporis quod, quibusdam illo dignissimos libero architecto nulla fugiat, veritatis saepe blanditiis tenetur veniam? Eum natus quam vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore velit labore exercitationem architecto cumque animi amet molestias consequuntur nihil? Voluptas aut provident aliquam eos vero eveniet. Quam ipsam error nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia nesciunt dolore quis ipsa, minima inventore enim nemo in expedita libero consectetur debitis veniam saepe dicta corporis illum exercitationem iste aut. <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem nam voluptatum nemo rerum hic tempora cumque dolorum earum ab vero tenetur dicta, quam velit, accusantium deleniti iste. Nostrum, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti doloribus, minus repellendus corporis quod, quibusdam illo dignissimos libero architecto nulla fugiat, veritatis saepe blanditiis tenetur veniam? Eum natus quam vel. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore velit labore exercitationem architecto cumque animi amet molestias consequuntur nihil? Voluptas aut provident aliquam eos vero eveniet. Quam ipsam error nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia nesciunt dolore quis ipsa, minima inventore enim nemo in expedita libero consectetur debitis veniam saepe dicta corporis illum exercitationem iste aut.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            font-size: 80px;
+            min-width: 1vw;
+            min-height: 1vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border: 1px solid red;
+            gap: 10px;
+        }
+        .left{
+            background-color: aqua;
+            border-radius: 5px;
+        }
+        .right{
+            background-color: bisque;
+            border-radius: 5px;
+            border: 1px solid blue;
+            width: 100%;
+            margin-bottom: 10px;
+        
+        }
+        .extra-1{
+            background-color: blueviolet;
+            border-radius: 5px;
+        }
+        .extra-2{
+            background-color:chocolate;
+             border-radius: 5px;
+        }
+        .abc{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        @media screen and (max-width:576px) {
+          .container{
+            display: flex;
+            flex-direction: column;
+          } 
+          .abc{
+            display: flex;
+            flex-direction: column;
+          }         
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h3>left</h3>
+        </div>
+        <div class="second-container">
+            <div class="right">
+                <h3>right
+                </h3>
+            </div>
+            <div class="abc">
+                <div class="extra-1">
+                    <h3>extra-1</h3>
+                </div>
+                <div class="extra-2">
+                    <h3>extra-2</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
